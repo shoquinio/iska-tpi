@@ -64,7 +64,7 @@ Para esta entrega se utilizó el asistente **Claude (Anthropic)** a través de C
 |---|---|---|---|
 | 1 | “Resolvé este TP respetando las consignas; podés ver los TP anteriores de la cervecería (antes RACER, ahora Iska)” | Ordenar las cuatro consignas y reutilizar lo ya entregado | La IA propuso automatizar el proceso de lote completo; se aceptó porque es el que conecta los tres módulos del sistema definidos en la Entrega 2. |
 | 2 | Generación del diagrama BPMN (pools, lanes y compuertas) a partir del proceso de elaboración | Dibujar el diagrama y el archivo `.bpmn` | Se controló que cada tarea estuviera en el carril del puesto correcto según el organigrama y que las excepciones (falta de stock, temperatura fuera de rango, lote rechazado) usaran compuertas exclusivas. |
-| 3 | Redacción de historias de usuario e indicadores de control | Primer borrador en formato formal | Los estándares numéricos se tomaron de las metas cuantitativas de la Entrega 2 (1,5 s de respuesta, 240.000 L, 10 semanas), no de valores genéricos propuestos por la IA. |
+| 3 | Redacción de historias de usuario e indicadores de control | Primer borrador en formato formal | Los estándares numéricos se tomaron de las metas cuantitativas de la Entrega 2 (1,5 s de respuesta, 80 millones de registros con consulta en menos de 2 s, alerta predictiva al 90 % del intervalo, 10 semanas con reserva), no de valores genéricos propuestos por la IA. |
 
 **Correcciones humanas sobre las respuestas de la IA**
 
