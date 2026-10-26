@@ -9,7 +9,7 @@ El control cierra el proceso administrativo (planificación → organización �
 | T1 | Latencia de lectura | Tiempo entre lectura de la sonda y su visualización (percentil 95) | ≤ 1,5 s | Diaria (automática) | Log de lecturas |
 | T2 | Disponibilidad | Horas operativas / horas de producción × 100 | ≥ 99 % mensual | Mensual | Monitor de servicio |
 | T3 | Lecturas perdidas | (Lecturas esperadas − registradas) / esperadas × 100 | ≤ 0,5 % | Semanal | Log de lecturas |
-| T4 | Tiempo de consulta del histórico | Tiempo de respuesta de un reporte de 3 años de lotes | ≤ 2 s | Trimestral | Prueba de carga |
+| T4 | Tiempo de consulta del histórico | Historial de 30 días de un fermentador (259.200 lecturas) con la base cargada a 80 millones de registros | ≤ 2 s | Trimestral | Prueba de carga |
 | T5 | Respaldo verificado | Copias diarias restauradas con éxito / copias realizadas | 100 % | Mensual | Registro de backups |
 | T6 | Incidentes críticos | Fallas que impiden registrar lotes o temperaturas; tiempo hasta resolverlas | 0 abiertos; resolución ≤ 48 h | Continua | Issues de GitHub (`bug`) |
 
@@ -23,6 +23,7 @@ El control cierra el proceso administrativo (planificación → organización �
 | G4 | Exactitud de inventario | \|stock del sistema − conteo físico\| / conteo físico × 100 | ≤ 2 % | Mensual (inventario físico) | `MATERIA_PRIMA` |
 | G5 | Cumplimiento del preventivo | Órdenes preventivas cerradas en fecha / programadas × 100 | ≥ 90 % | Mensual | `ORDEN_MANTENIMIENTO` |
 | G6 | Parada no programada | Σ `horas_parada` de órdenes correctivas | ≤ 4 h por mes | Mensual | `ORDEN_MANTENIMIENTO` |
+| G7 | Alertas predictivas | Equipos que llegaron al 90 % de su intervalo con alerta emitida / equipos que llegaron × 100 | 100 % | Mensual | `EQUIPO` |
 
 ## Semáforo y acción correctiva
 
@@ -45,7 +46,7 @@ El control cierra el proceso administrativo (planificación → organización �
 | T1–T6 | Desarrollador del sistema | Dirección General |
 | G1, G2 | Maestro Cervecero | Dirección General |
 | G3, G4 | Resp. de Administración y Compras | Dirección General |
-| G5, G6 | Asistente / Operario (Mantenimiento) | Maestro Cervecero |
+| G5–G7 | Asistente / Operario (Mantenimiento) | Maestro Cervecero |
 
 ## Auditoría técnica
 
