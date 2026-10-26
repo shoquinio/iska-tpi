@@ -51,8 +51,8 @@ iska-tpi/
 
 ## Enlaces
 
-- Repositorio: https://github.com/TU_USUARIO/iska-tpi
-- Tablero GitHub Projects: https://github.com/users/TU_USUARIO/projects/N
+- Repositorio: https://github.com/shoquinio/iska-tpi
+- Tablero GitHub Projects: https://github.com/users/shoquinio/projects/1
 
 ## Declaración de Uso de IA
 
