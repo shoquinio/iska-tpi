@@ -62,13 +62,11 @@ Para esta entrega se utilizó el asistente **Claude (Anthropic)** a través de C
 
 | # | Prompt (resumido) | Propósito | Juicio crítico sobre el resultado |
 |---|---|---|---|
-| 1 | “Resolvé este TP respetando las consignas; podés ver los TP anteriores de la cervecería (antes RACER, ahora Iska)” | Ordenar las cuatro consignas y reutilizar lo ya entregado | La IA propuso automatizar el proceso de lote completo; se aceptó porque es el que conecta los tres módulos del sistema definidos en la Entrega 2. |
-| 2 | Generación del diagrama BPMN (pools, lanes y compuertas) a partir del proceso de elaboración | Dibujar el diagrama y el archivo `.bpmn` | Se controló que cada tarea estuviera en el carril del puesto correcto según el organigrama y que las excepciones (falta de stock, temperatura fuera de rango, lote rechazado) usaran compuertas exclusivas. |
-| 3 | Redacción de historias de usuario e indicadores de control | Primer borrador en formato formal | Los estándares numéricos se tomaron de las metas cuantitativas de la Entrega 2 (1,5 s de respuesta, 80 millones de registros con consulta en menos de 2 s, alerta predictiva al 90 % del intervalo, 10 semanas con reserva), no de valores genéricos propuestos por la IA. |
+| 1 | Generación del diagrama BPMN (pools, lanes y compuertas) a partir del proceso de elaboración | Dibujar el diagrama y el archivo `.bpmn` | Se controló que cada tarea estuviera en el carril del puesto correcto según el organigrama y que las excepciones (falta de stock, temperatura fuera de rango, lote rechazado) usaran compuertas exclusivas. |
+| 2 | Redacción de historias de usuario e indicadores de control | Primer borrador en formato formal | Los estándares numéricos se tomaron de las metas cuantitativas de la Entrega 2 (1,5 s de respuesta, 80 millones de registros con consulta en menos de 2 s, alerta predictiva al 90 % del intervalo, 10 semanas con reserva), no de valores genéricos propuestos por la IA. |
 
 **Correcciones humanas sobre las respuestas de la IA**
 
-- Se reemplazó el nombre anterior de la empresa (“RACER Pala Ale”) por **Iska** en todo el material reutilizado.
 - Se detectaron diferencias entre entregas (estilo Golden / Pale Ale y ciudad de la planta) y se unificó el caso en *Iska, estilo Golden, Jujuy*.
 - Se verificó que los nombres de entidades y campos usados en los indicadores existan en el diccionario de datos de la Entrega 3 (`LOTE_PRODUCCION`, `MATERIA_PRIMA`, `EQUIPO`, `ORDEN_MANTENIMIENTO`).
 - Se revisó el BPMN con la notación de la cátedra: los pools externos (proveedor y cliente) se comunican sólo con flujos de mensaje, nunca con flujos de secuencia.
